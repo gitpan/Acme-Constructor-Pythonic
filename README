@@ -24,13 +24,13 @@ DESCRIPTION
         acct = BankAccount(9.99)
 
     This module allows Python-like object instantiation in Perl. The example
-    in the SYNOPSIS creates three functions "UserAgent", "JSON" and
-    <Request> each of which just pass through their arguments to the real
-    object constructors.
+    in the SYNOPSIS creates three functions `UserAgent`, `JSON` and <Request>
+    each of which just pass through their arguments to the real object
+    constructors.
 
   Options
-    Each argument to the Acme::Constructor::Pythonic is a Perl module name
-    and may be followed by a hashref of options:
+    Each argument to the Acme::Constructor::Pythonic is a Perl module name and
+    may be followed by a hashref of options:
 
         use Acme::Constructor::Pythonic
             'A::Module',
@@ -40,26 +40,26 @@ DESCRIPTION
 
     *   class
 
-        The class to call the constructor on. This is normally the same as
-        the module name, and that's the default assumption, so there's no
-        usually much point in providing it.
+        The class to call the constructor on. This is normally the same as the
+        module name, and that's the default assumption, so there's no usually
+        much point in providing it.
 
     *   constructor
 
-        The method name for the constructor. The default is "new" which is
+        The method name for the constructor. The default is `new` which is
         usually correct.
 
     *   alias
 
-        The name of the function you want created for you. The default is
-        the last component of the module name, which is often sensible.
+        The name of the function you want created for you. The default is the
+        last component of the module name, which is often sensible.
 
     *   no_require
 
         Acme::Constructor::Python will automatically load the module
         specified. Not straight away; it waits until you actually perform an
-        instantiation. If you don't want Acme::Constructor::Python to load
-        the module, then set this option to true.
+        instantiation. If you don't want Acme::Constructor::Python to load the
+        module, then set this option to true.
 
 BUGS
     Please report any bugs to
@@ -74,10 +74,10 @@ AUTHOR
     (Though it was SSCAFFIDI's idea.)
 
 COPYRIGHT AND LICENCE
-    This software is copyright (c) 2012 by Toby Inkster.
+    This software is copyright (c) 2012, 2014 by Toby Inkster.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+    This is free software; you can redistribute it and/or modify it under the
+    same terms as the Perl 5 programming language system itself.
 
 DISCLAIMER OF WARRANTIES
     THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
